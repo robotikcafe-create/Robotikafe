@@ -1,0 +1,88 @@
+
+/* =========================================
+   MENU PAGE
+========================================= */
+
+.menu-page {
+    min-height: 100vh;
+    padding-top: 160px !important;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 119, 255, 0.12),
+            transparent 40%
+        ),
+        var(--bg);
+}
+
+.menu-list {
+    max-width: 850px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px;
+
+    background: var(--card);
+    border: 1px solid rgba(0, 234, 255, 0.15);
+
+    transition: 0.3s;
+}
+
+.menu-list-item:hover {
+    border-color: var(--cyan);
+    transform: translateX(8px);
+    box-shadow: var(--glow);
+}
+
+.menu-list-item h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.menu-list-item p {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.menu-list-item > span {
+    color: var(--cyan);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.back-menu {
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .menu-page {
+        padding-top: 180px !important;
+    }
+
+    .menu-list-item {
+        padding: 20px 15px;
+    }
+
+    .menu-list-item h3 {
+        font-size: 12px;
+    }
+
+    .menu-list-item > span {
+        font-size: 11px;
+    }
+
+}
