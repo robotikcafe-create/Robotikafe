@@ -295,3 +295,72 @@ console.log(
 updateActiveNavigation();
 
 console.log("ROBOTIKAFE JavaScript loaded successfully!");
+
+
+/* ROBOTIKAFE - DRINK QUANTITY SYSTEM */
+
+const drinkMenu = document.getElementById("drink-menu");
+
+if (drinkMenu) {
+
+    drinkMenu.addEventListener("click", function(event) {
+
+        const button = event.target.closest("button[data-action]");
+
+        if (!button) return;
+
+        const item = button.closest(".drink-item");
+        const temperature = button.dataset.temp;
+        const action = button.dataset.action;
+
+        const quantityDisplay = item.querySelector(
+            `[data-qty="${temperature}"]`
+        );
+
+        let quantity = Number(quantityDisplay.textContent);
+
+        if (action === "add") {
+            quantity++;
+        }
+
+        if (action === "remove" && quantity > 0) {
+            quantity--;
+        }
+
+        quantityDisplay.textContent = quantity;
+
+        updateDrinkSummary();
+    });
+
+
+    function updateDrinkSummary() {
+
+        let totalQuantity = 0;
+        let totalPrice = 0;
+
+        document.querySelectorAll(".drink-item").forEach(item => {
+
+            const price = Number(item.dataset.price);
+
+            const hot = Number(
+                item.querySelector('[data-qty="panas"]').textContent
+            );
+
+            const cold = Number(
+                item.querySelector('[data-qty="dingin"]').textContent
+            );
+
+            totalQuantity += hot + cold;
+
+            totalPrice += (hot + cold) * price;
+
+        });
+
+        document.getElementById("total-drinks").textContent =
+            totalQuantity + " Gelas";
+
+        document.getElementById("total-price").textContent =
+            "Rp" + totalPrice.toLocaleString("id-ID");
+    }
+
+}

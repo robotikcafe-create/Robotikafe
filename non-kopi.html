@@ -52,138 +52,169 @@
         </div>
 
 
-        <div class="menu-list">
+    
+    <div class="menu-list" id="drink-menu">
 
-            <!-- MINUMAN 1 -->
-            <div class="menu-list-item">
+        <!-- ES TEH MANIS -->
+        <div class="menu-list-item drink-item" data-price="5000">
+            <div class="drink-info">
+                <h3>Es Teh Manis</h3>
+                <p>Teh manis dingin yang menyegarkan.</p>
+                <span class="drink-price">Rp5.000</span>
+           </div>
 
-                <div>
-                    <h3>Teh Manis</h3>
-                    <p>Teh manis yang menenangkan hati.</p>
-
-                    <span class="drink-price">Rp5.000</span>
+           <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
                 </div>
 
-                <div class="drink-options">
-
-                   <label class="hot">
-                   <input type="checkbox" name="suhu-esteh" value="panas">
-                   PANAS
-                   </label>
-
-                   <label class="cold">
-                   <input type="checkbox" name="suhu-esteh" value="dingin">
-                   DINGIN
-                   </label>
-
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
                 </div>
-
             </div>
-
-
-            <!-- MINUMAN 2 -->
-            <div class="menu-list-item">
-
-                <div>
-                    <h3>Teh Tarik</h3>
-                    <p>Perpaduan teh dan susu dengan rasa khas.</p>
-
-                    <span class="drink-price">Rp8.000</span>
-                </div>
-
-                <div class="drink-options">
-
-                   <label class="hot">
-                   <input type="checkbox" name="suhu-esteh" value="panas">
-                   PANAS
-                   </label>
-
-                   <label class="cold">
-                   <input type="checkbox" name="suhu-esteh" value="dingin">
-                   DINGIN
-                   </label>
-
-                </div>
-
-            </div>
-
-
-            <!-- MINUMAN 3 -->
-             <div class="menu-list-item">
-
-                <div>
-                    <h3>Lemon Tea</h3>
-                    <p>Kesegaran teh dengan sentuhan rasa lemon.</p>
-
-                    <span class="drink-price">Rp8.000</span>
-                </div>
-
-                <div class="drink-options">
-
-                   <label class="hot">
-                   <input type="checkbox" name="suhu-esteh" value="panas">
-                   PANAS
-                   </label>
-
-                   <label class="cold">
-                   <input type="checkbox" name="suhu-esteh" value="dingin">
-                   DINGIN
-                   </label>
-
-                </div>
-
-            </div>
-
-
-            <!-- MINUMAN 4 -->
-             <div class="menu-list-item">
-
-                <div>
-                    <h3>Coklat panas/dingin</h3>
-                    <p>Minuman cokelat dengan rasa manis.</p>
-
-                    <span class="drink-price">Rp10.000</span>
-                </div>
-
-                <div class="drink-options">
-
-                   <label class="hot">
-                   <input type="checkbox" name="suhu-esteh" value="panas">
-                   PANAS
-                   </label>
-
-                   <label class="cold">
-                   <input type="checkbox" name="suhu-esteh" value="dingin">
-                   DINGIN
-                   </label>
-
-                </div>
-
-            </div>
-
-
-            <!-- MINUMAN 5 -->
-            <div class="menu-list-item">
-                <div>
-                    <h3>Susu Strawberry</h3>
-                    <p>Perpaduan susu dan rasa strawberry.</p>
-                </div>
-
-                <span>Rp10.000</span>
-            </div>
-
-
-            <!-- MINUMAN 6 -->
-            <div class="menu-list-item">
-                <div>
-                    <h3>Matcha Latte</h3>
-                    <p>Minuman matcha dengan campuran susu creamy.</p>
-                </div>
-
-                <span>Rp12.000</span>
-            </div>
-
         </div>
+
+
+        <!-- TEH TARIK -->
+        <div class="menu-list-item drink-item" data-price="8000">
+            <div class="drink-info">
+                <h3>Teh Tarik</h3>
+                <p>Perpaduan teh dan susu dengan rasa khas.</p>
+                <span class="drink-price">Rp8.000</span>
+            </div>
+
+            <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
+                </div>
+
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- LEMON TEA -->
+        <div class="menu-list-item drink-item" data-price="8000">
+            <div class="drink-info">
+                <h3>Lemon Tea</h3>
+                <p>Kesegaran teh dengan sentuhan rasa lemon.</p>
+                <span class="drink-price">Rp8.000</span>
+            </div>
+
+            <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
+                </div>
+
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ES COKELAT -->
+        <div class="menu-list-item drink-item" data-price="10000">
+            <div class="drink-info">
+                <h3>Es Cokelat</h3>
+                <p>Minuman cokelat dengan rasa manis.</p>
+                <span class="drink-price">Rp10.000</span>
+            </div>
+
+            <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
+                </div>
+
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SUSU STRAWBERRY -->
+        <div class="menu-list-item drink-item" data-price="10000">
+            <div class="drink-info">
+                <h3>Susu Strawberry</h3>
+                <p>Perpaduan susu dan rasa strawberry.</p>
+                <span class="drink-price">Rp10.000</span>
+            </div>
+
+            <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
+                </div>
+
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MATCHA LATTE -->
+        <div class="menu-list-item drink-item" data-price="12000">
+            <div class="drink-info">
+                <h3>Matcha Latte</h3>
+                <p>Minuman matcha dengan campuran susu creamy.</p>
+                <span class="drink-price">Rp12.000</span>
+            </div>
+
+            <div class="drink-counter">
+                <div class="counter-group">
+                    <button class="temperature-btn hot" data-action="add" data-temp="panas">☀ PANAS</button>
+                    <button class="minus-btn" data-action="remove" data-temp="panas">−</button>
+                    <span class="quantity" data-qty="panas">0</span>
+                </div>
+
+                <div class="counter-group">
+                    <button class="temperature-btn cold" data-action="add" data-temp="dingin">❄ DINGIN</button>
+                    <button class="minus-btn" data-action="remove" data-temp="dingin">−</button>
+                    <span class="quantity" data-qty="dingin">0</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- RINGKASAN PESANAN -->
+    <div class="drink-summary">
+        <h3>ORDER SUMMARY</h3>
+
+        <div class="summary-row">
+            <span>Total Minuman</span>
+            <strong id="total-drinks">0</strong>
+        </div>
+
+        <div class="summary-row">
+            <span>Total Harga</span>
+            <strong id="total-price">Rp0</strong>
+        </div>
+    </div>
 
 
         <!-- BACK BUTTON -->

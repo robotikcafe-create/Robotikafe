@@ -1226,3 +1226,137 @@ section:not(.hero) {
     }
 }
 
+
+/* DRINK COUNTER */
+
+.drink-info {
+    flex: 1;
+    min-width: 150px;
+}
+
+.drink-price {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--cyan);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 8px var(--cyan);
+}
+
+.drink-counter {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.counter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.temperature-btn {
+    padding: 9px 12px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 7px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.temperature-btn.hot {
+    color: #ffad66;
+    border-color: #ffad66;
+    box-shadow: 0 0 8px rgba(255, 173, 102, 0.2);
+}
+
+.temperature-btn.hot:hover {
+    background: rgba(255, 173, 102, 0.15);
+    box-shadow: 0 0 15px #ffad66;
+}
+
+.temperature-btn.cold {
+    color: var(--cyan);
+    border-color: var(--cyan);
+    box-shadow: 0 0 8px rgba(0, 234, 255, 0.2);
+}
+
+.temperature-btn.cold:hover {
+    background: rgba(0, 234, 255, 0.15);
+    box-shadow: 0 0 15px var(--cyan);
+}
+
+.minus-btn {
+    width: 27px;
+    height: 27px;
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.minus-btn:hover {
+    color: #ff5555;
+    border-color: #ff5555;
+}
+
+.quantity {
+    min-width: 20px;
+    color: var(--cyan);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 8px var(--cyan);
+}
+
+/* ORDER SUMMARY */
+
+.drink-summary {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid var(--cyan);
+    border-radius: 12px;
+    box-shadow: var(--glow);
+}
+
+.drink-summary h3 {
+    color: var(--cyan);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: var(--gray);
+}
+
+.summary-row strong {
+    color: var(--cyan);
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 8px var(--cyan);
+}
+
+@media (max-width: 600px) {
+    .menu-list-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .drink-counter {
+        margin-top: 15px;
+    }
+
+    .counter-group {
+        justify-content: flex-start;
+    }
+}
